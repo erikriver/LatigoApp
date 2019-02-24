@@ -1,0 +1,7 @@
+export default {
+    ADD: 'ADD_CATEGORY',
+    REMOVE: 'REMOVE_CATEGORY',
+    UPDATE: 'UPDATE_CATEGORY',
+    RESET: 'RESET_CATEGORY',
+  };
+  

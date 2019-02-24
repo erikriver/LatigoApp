@@ -126,9 +126,9 @@ SettingsStack.navigationOptions = {
 export default createBottomTabNavigator({
   HomeStack,
   HistoryStack,
-//  AddStack,
+  AddStack,
   PlanStack,
-  LinksStack,
+//  LinksStack,
   SettingsStack
 }, {
     tabBarComponent: TabBar

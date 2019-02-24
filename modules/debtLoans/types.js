@@ -1,0 +1,7 @@
+export default {
+  ADD: 'ADD_DEBTLOAN',
+  REMOVE: 'REMOVE_DEBTLOAN',
+  RESET: 'RESET_DEBTLOAN',
+  UPDATE: 'UPDATE_DEBTLOAN',
+};
+  

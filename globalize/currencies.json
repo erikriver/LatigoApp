@@ -1,0 +1,38 @@
+{
+  "main": {
+    "es": {
+      "identity": {
+        "version": {
+          "_number": "$Revision: 14491 $",
+          "_cldrVersion": "34"
+        },
+        "language": "es"
+      },
+      "numbers": {
+        "currencies": {
+          "MXN": {
+            "displayName": "Peso Mexicano",
+            "displayName-count-one": "Peso mexicano",
+            "displayName-count-other": "Pesos mexicanos",
+            "symbol": "MX$",
+            "symbol-alt-narrow": "$"
+          },
+          "USD": {
+            "displayName": "Dolar Americano",
+            "displayName-count-one": "Dolar Americano",
+            "displayName-count-other": "Dolares Americanos",
+            "symbol": "$",
+            "symbol-alt-narrow": "$"
+          },
+          "CAD": {
+            "displayName": "Dolar canadiense",
+            "displayName-count-one": "Dolar canadiense",
+            "displayName-count-other": "Dolar canadiense",
+            "symbol": "CA$",
+            "symbol-alt-narrow": "$"
+          },
+        }
+      }
+    }
+  }
+}
