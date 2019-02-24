@@ -16,13 +16,14 @@ import TabBar from '../components/navigation/TabBar';
 import HomeScreen2 from '../screens/HomeScreen2';;
 import PlansScreen from '../screens/PlansScreen';
 import screens from '../constants/screens';
-
+import BankChooser from '../screens/bankaccounts/BankChooser';
 
 const HomeStack = createStackNavigator({
   // IconPickerScreen: IconPickerScreen,
   // TransactionDetailScreen:TransactionDetailScreen,
   [screens.Home]: HomeScreen2,
   // Home: HomeScreen,
+  Home: BankChooser, // for testing porpuses
   ...TransactionRoutes,
   ...CategoryRoutes,
   ...AccountRoutes
