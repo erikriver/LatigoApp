@@ -19,6 +19,17 @@
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-navigation": "^3.0.9"
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
+    "redux-axios-middleware": "^4.0.0",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "remote-redux-devtools": "^0.5.16",
+    "unsplash-js": "^5.0.0",
+    "uuid": "^3.3.2",
+    "victory-native": "^31.0.0",
+    "xdate": "^0.8.2"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
