@@ -1,7 +1,6 @@
 LatiGO
 =====================================
-
-La aplicación movil que te obliga ahorar de una forma divertida y con opciones a invertir tu dinero.
+Látigo es una app que te obliga a ahorrar. Después de perfilar la salud financiera y hábitso de consumo de los usuarios, Látigo les recomienda a reservar un porcentaje de su nómina y redondea sus pagos enviando un porcentaje a su cuenta de ahorro. La app establece metas de ahorro, y ofrece un martketplace integrado con distintos productos de inversión de terceros (Konfio, Afluenta, GBM…).
 
 _Nota: Está en modo experimental, creado en el Startupbootcamp FinTech Hackathon Vol.02 en la Ciudad de México_
 
