@@ -1,19 +1,32 @@
 LatiGO
 =====================================
-
-La aplicación movil que te obliga ahorar de una forma divertida y con opciones a invertir tu dinero.
+Látigo es una app que te obliga a ahorrar. Después de perfilar la salud financiera y hábitso de consumo de los usuarios, Látigo les recomienda a reservar un porcentaje de su nómina y redondea sus pagos enviando un porcentaje a su cuenta de ahorro. La app establece metas de ahorro, y ofrece un martketplace integrado con distintos productos de inversión de terceros (Konfio, Afluenta, GBM…).
 
 _Nota: Está en modo experimental, creado en el Startupbootcamp FinTech Hackathon Vol.02 en la Ciudad de México_
 
 Integraciones
 -------
+#### Acceso a bancos
+
 Dado el alcance del Hackathon Latigo está integrado con las APIs de:
 - HSBC
 - Banregio
 
 _Dadas las restricciones de tiempo, la integración con Gentera quedó como TODO_
 
-Infraestructura
+#### Acceso a inversiones
+
+Látigo estará integrado con empresas que ofrezcan productos de inversión:
+- Afluenta
+- Kubo Financiero
+- GBM
+- Cetesdirecto
+- Bitso
+
+
+Arquitectura
 -------
-El backend está montado sobre Google Cloud, y usa Spark Framework. El servidor 
+
+![alt text](https://i.imgur.com/28uOGUt.png)
+
 
