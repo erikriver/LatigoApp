@@ -14,5 +14,5 @@ _Dadas las restricciones de tiempo, la integración con Gentera quedó como TODO
 
 Infraestructura
 -------
-El backend está montado sobre Google Cloud, y usa Spark Framework. El servidor 
 
+![alt text](https://drive.google.com/open?id=1WprSJxyVP2EC_zJGkeVIIyMijXqhPprY)
