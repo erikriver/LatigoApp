@@ -6,13 +6,27 @@ _Nota: Está en modo experimental, creado en el Startupbootcamp FinTech Hackatho
 
 Integraciones
 -------
+#### Acceso a bancos
+
 Dado el alcance del Hackathon Latigo está integrado con las APIs de:
 - HSBC
 - Banregio
 
 _Dadas las restricciones de tiempo, la integración con Gentera quedó como TODO_
 
-Infraestructura
+#### Acceso a inversiones
+
+Látigo estará integrado con empresas que ofrezcan productos de inversión:
+- Afluenta
+- Kubo Financiero
+- GBM
+- Cetesdirecto
+- Bitso
+
+
+Arquitectura
 -------
 
 ![alt text](https://i.imgur.com/28uOGUt.png)
+
+
