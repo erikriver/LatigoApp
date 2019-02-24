@@ -1,6 +1,7 @@
 {
+  "name": "LatigoApp",
   "expo": {
-    "name": "LatiGO",
+    "name": "Latigo App",
     "slug": "LatigoApp",
     "privacy": "public",
     "sdkVersion": "32.0.0",
@@ -17,13 +18,19 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "enabled": false
     },
     "assetBundlePatterns": [
-      "**/*"
+      "assets/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": false,
+      "bundleIdentifier": "com.hackathonfintech.latigo"
+    },
+    "android": {
+      "package": "com.hackathonfintech.latigo"
+    },
+    "description": ""
   }
 }
