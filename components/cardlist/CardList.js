@@ -9,6 +9,7 @@ import {
 import PropTypes from 'prop-types';
 import { ItemCard } from './ItemCard';
 import AppNavigator from '../../navigation/AppNavigator';
+import Onboarding2 from '../../screens/OnboardingScreen2';
 
 export class CardList extends React.Component {
 
@@ -136,7 +137,7 @@ export class CardList extends React.Component {
 
   render() {
     if (this.state.showMainApp) {
-      return <AppNavigator />;
+      return <Onboarding2 />;
     } else {
     return (
       <Animated.View style={[{ flex: 1 }, this.state.zoomedStyle]}>

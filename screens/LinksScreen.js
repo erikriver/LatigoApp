@@ -16,15 +16,6 @@ class LinksScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return {
       headerTransparent: true,
-      // headerTitle: (
-      //   <ActiveAccountName style={{ color: '#fff', fontSize: 16, marginTop: 10}}></ActiveAccountName>
-      // ),
-      // headerLeft: (
-      //   <AccountSelector onPress={() => navigation.navigate(screens.AccountChooser)}></AccountSelector>
-      // ),
-      // headerRight: (
-      //   <AccountSelector onPress={() => navigation.navigate(screens.AccountChooser)}></AccountSelector>
-      // ),
     }
   };
   constructor(props) {
@@ -50,7 +41,7 @@ class LinksScreen extends React.Component {
     ]
 
     return (
-      <ViewWithTitle title="Stats" subTitle="Thursday, 18 January">
+      <ViewWithTitle title="Análisis" subTitle="Domingo, 24 Febrero">
         <AccountCarousel accounts={this.props.accounts}></AccountCarousel>
         <DefaultPanel title="Cards">
           <VictoryChart polar

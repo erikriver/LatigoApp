@@ -16,14 +16,12 @@ import TabBar from '../components/navigation/TabBar';
 import HomeScreen2 from '../screens/HomeScreen2';;
 import PlansScreen from '../screens/PlansScreen';
 import screens from '../constants/screens';
-//import BankChooser from '../screens/bankaccounts/BankChooser';
 
 const HomeStack = createStackNavigator({
   // IconPickerScreen: IconPickerScreen,
   // TransactionDetailScreen:TransactionDetailScreen,
   [screens.Home]: HomeScreen2,
   // Home: HomeScreen,
-  // Home: BankChooser, // for testing porpuses
   ...TransactionRoutes,
   ...CategoryRoutes,
   ...AccountRoutes
@@ -76,7 +74,7 @@ const AddStack = createStackNavigator({
 
 AddStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (<TabBarText focused={focused}></TabBarText>),
-  tabBarIcon: <AddButton routes={[{routeName:'TransactionDetail', color: 'blue'}, {routeName:'TransactionDetail', color: 'red'}]}/> // Plus button component
+  tabBarIcon: <AddButton routes={[{routeName:'AccountChooser', color: 'blue'}, {routeName:'AccountChooser', color: 'red'}]}/> // Plus button component
 }
 
 const LinksStack = createStackNavigator({
@@ -129,8 +127,8 @@ export default createBottomTabNavigator({
   HistoryStack,
   AddStack,
   PlanStack,
-//  LinksStack,
-  SettingsStack
+  LinksStack,
+//  SettingsStack
 }, {
     tabBarComponent: TabBar
 });
