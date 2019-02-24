@@ -15,4 +15,4 @@ _Dadas las restricciones de tiempo, la integración con Gentera quedó como TODO
 Infraestructura
 -------
 
-![alt text](https://drive.google.com/open?id=1WprSJxyVP2EC_zJGkeVIIyMijXqhPprY)
+![alt text](https://i.imgur.com/28uOGUt.png)
