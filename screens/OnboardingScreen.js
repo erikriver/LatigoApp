@@ -3,7 +3,8 @@ import { Ionicons } from '@expo/vector-icons';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import { LinearGradient } from 'expo';
 import AppIntroSlider from 'react-native-app-intro-slider';
-import AppNavigator from '../navigation/AppNavigator';
+//import AppNavigator from '../navigation/AppNavigator';
+import BankChooser from '../screens/bankaccounts/BankChooser';
 
 const styles = StyleSheet.create({
   buttonCircle: {
@@ -121,7 +122,7 @@ export default class Onboarding extends React.Component {
   }
   render(){
     if (this.state.showRealApp) {
-      return <AppNavigator />;
+      return <BankChooser />;
     } else {
       return <AppIntroSlider
         slides={slides}

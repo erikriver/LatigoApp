@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { ItemCard } from './ItemCard';
+import AppNavigator from '../../navigation/AppNavigator';
 
 export class CardList extends React.Component {
 
@@ -44,7 +45,8 @@ export class CardList extends React.Component {
       selected: new Map(),
       zoomedStyle: {},
       maxHeight: 400,
-      zoomAnim: new Animated.Value(1)
+      zoomAnim: new Animated.Value(1),
+      showMainApp: false
     }    
   }
 
@@ -114,6 +116,10 @@ export class CardList extends React.Component {
     });
   }
 
+  _submitItem = ()=>{
+    this.setState({showMainApp: true})
+  }
+
   _renderItem = ({ item, index }) =>
     <ItemCard
       onLayout={e => this._layouts.set(item.id, e.nativeEvent.layout)}
@@ -122,12 +128,16 @@ export class CardList extends React.Component {
       content={item.content}
       onPress={() => this._onPressItem({ item, index })}
       onClose={() => this._onCloseItem({item, index})}
+      onSubmit={() => this._submitItem({item, index})}
       maxHeight={this.state.maxHeight}
       selected={this.state.selected.get(item.id)}
       heightDuration={this.props.duration}
     />  
 
   render() {
+    if (this.state.showMainApp) {
+      return <AppNavigator />;
+    } else {
     return (
       <Animated.View style={[{ flex: 1 }, this.state.zoomedStyle]}>
         <FlatList
@@ -144,5 +154,6 @@ export class CardList extends React.Component {
       </Animated.View>
     )
   }
+}
 
 }

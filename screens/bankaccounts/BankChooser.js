@@ -29,7 +29,6 @@ const cards = [
 ]
 
 export default class BankChooser extends Component {
-
   render() {
     return (
       <View style={styles.container}>

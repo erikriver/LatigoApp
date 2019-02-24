@@ -9,12 +9,14 @@ import {
   StyleSheet,
   TouchableWithoutFeedback
 } from 'react-native';
-
 import { RoundedButton } from '../../components';
 import PropTypes from 'prop-types';
+import AppNavigator from '../../navigation/AppNavigator';
 
 export class ItemCard extends React.Component {
-
+  state = {
+    showMainApp: false
+  }
   static propTypes = {
     title: PropTypes.string.isRequired,
     picture: PropTypes.any.isRequired,
@@ -24,6 +26,7 @@ export class ItemCard extends React.Component {
     onPress: PropTypes.func,
     onLayout: PropTypes.func,
     onClose: PropTypes.func,
+    onSubmit: PropTypes.func,
 
     activeOpacity: PropTypes.number,
 
@@ -48,7 +51,8 @@ export class ItemCard extends React.Component {
       scaleAnim: new Animated.Value(1),
       selected: this.props.selected,
       account: '',
-      password: ''
+      password: '',
+      showMainApp: false
     }    
 
   }
@@ -93,12 +97,6 @@ export class ItemCard extends React.Component {
       }).start()
     }
 
-  }
-
-  _submitForm = ()=>{
-    if (this.state.account && this.state.password) {
-      this.props.navigation.navigate(screens.AccountSuccess);
-    }
   }
 
   render() {
@@ -160,7 +158,7 @@ export class ItemCard extends React.Component {
                     onChangeText={(text) => this.setState({  password: text })}
                     value={this.state.password}
                   />
-                <RoundedButton style={styles.button} onPress={this._submitForm}>Enviar</RoundedButton>
+                <RoundedButton style={styles.button} onPress={this.props.onSubmit}>Enviar</RoundedButton>
 
               </View> : null
           }
